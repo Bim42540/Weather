@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="css/app.css" rel="stylesheet">
-	<link rel="stylesheet" href="resources/sass/app.scss">
+	<!-- <link rel="stylesheet" href="resources/sass/app.scss"> -->
 
 	<title>Orai</title>
 </head>
@@ -16,45 +16,19 @@
 	<div class="container mt-5">
 		<div class="card">
 			<div class="card-body">
-				<input type="text" class="form-control" placeholder="Įveskite norimo miesto pavadinimą" id="place">
+				<input type="text" class="form-control" placeholder="Enter your city" id="place">
 			</div>
 			<div class="list-group list-group-flush" id="place-suggestions"></div>
 	</div>
 
+	<button class="btn btn-info border border-primary more-cities-btn
+	position-absolute start-50">Show temperature</button>
+
 	<div class="container cards-container">
 		<div class="card-group">
-			<div class="card">
-			  <div class="card-body">
-				<h5 class="card-title position-absolute start-50">Vilnius</h5>
-				<p class="card-text ms-5 card-temp-inside">Temperatūra : </p>
-				<p class="card-text ms-5">Vėjo greitis : </p>
-				<p class="card-text ms-5">Oro salygos : </p>			
-				
-			  </div>
-			</div>
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title position-absolute start-50">Kaunas</h5>
-						<p class="card-text ms-5 card-temp-inside">Temperatūra : </p>
-						<p class="card-text ms-5">Vėjo greitis : </p>
-						<p class="card-text ms-5">Oro salygos : </p>			
-						
-					</div>
-			  	</div>
-			  	<div class="card">
-					<div class="card-body">
-					<h5 class="card-title position-absolute start-50">Klaipėda</h5>
-					<p class="card-text ms-5 card-temp-inside">Temperatūra : </p>
-					<p class="card-text ms-5">Vėjo greitis : </p>
-					<p class="card-text ms-5">Oro salygos : </p>			
-					
-					</div>
-			  </div>
-		  </div>
-	</div>
 
-	<button class="btn btn-info border border-primary more-cities-btn
-	position-absolute start-50">Daugiau miestų</button>
+		</div>
+	</div>
 	<script src="js/app.js"></script>
 </body>
 </html>

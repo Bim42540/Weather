@@ -14,8 +14,8 @@ router.get('/places/find/:name', function(req, res, next) {
 });
 
 router.get('/places/:name/forecasts/long-term', function(req, res, next) {
-	MeteoApi.getPlaceForecasts().then(places => {
-		res.json(places);
+	MeteoApi.getPlaceForecasts(req.params.name).then(forecast => {
+		res.json(forecast);
 	});
 });
 

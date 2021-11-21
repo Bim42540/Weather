@@ -10,9 +10,9 @@ module.exports.getPlaces = function() {
 	});
 }
 
-module.exports.getPlaceForecasts = function() {
+module.exports.getPlaceForecasts = function(city) {
 	return new Promise(function(resolve) {
-		request.get(`https://api.meteo.lt/v1/places/Kaunas/forecasts/long-term`).then(response => {
+		request.get(`https://api.meteo.lt/v1/places/${city}/forecasts/long-term`).then(response => {
 			let placesInfo = JSON.parse(response.body);
 
 			resolve(placesInfo);
