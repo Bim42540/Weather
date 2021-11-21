@@ -1,0 +1,42 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    color: rgb(26, 94, 94); 
+    font-family: monospace;
+}
+
+.cards-container {
+    margin-top: 35px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.card-title {
+    margin-left: auto;
+}
+
+.card-temp-inside {
+    margin-top: 50px;
+}
+
+.card {
+    min-width: 32%;
+}
+
+.weather-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.more-cities-btn {
+    margin-top: 50px;
+}
+
+.more-cities-btn:hover {
+    background-color: cadetblue;
+    font-size: 120%;
+}
